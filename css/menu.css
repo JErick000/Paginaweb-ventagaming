@@ -1,0 +1,94 @@
+.menu {
+    background-color: #27241A;
+    padding: 20px 30px;
+    height: 68px;
+    
+}
+/* la etiqueta ul manda
+    ul es el bloque
+     li lista donde esta el menu osea el nombre
+      a un link
+*/
+.menu ul {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    padding: 5px;
+    
+}
+.menu li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 30px;
+}
+
+.menu ul li a:hover, .mostrarMenu:hover{
+    background-color:aquamarine;
+}
+
+.logo img{
+    position: absolute;
+    left: 0;
+    top: 181px;
+    height: 68px;  
+}
+.mostrarMenu{
+    font-size: 2em;
+    cursor: pointer;
+    float: right;
+    color: black;
+    display: none;
+    position: relative;
+    z-index: 150;    
+}
+
+
+#check{
+    display: none;
+}
+
+@media screen and (max-width:952px) {
+    .logo{
+        padding-left: 20px;
+    }
+    .menu ul li a{
+        font-size: 16px;
+    }
+}
+
+@media  screen and (max-width: 858px){
+    .mostrarMenu{
+        display: block;   
+        position: absolute;
+    }
+    .menu {
+        position: fixed;
+        width: 80%;
+        height: 50vh;
+        background-color: rgba(46, 8, 8, 0.8);
+        top: 0;
+        right: -100%;
+        padding: 100px 0;
+        z-index: 100;
+        
+    }
+    .menu ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu li a {
+        display: block;
+        padding: 20px;
+    }
+    .logo img{
+        display: none;
+    }
+    .verMenu {
+        right: 0;
+        
+    }
+    #check:checked ~ .menu{
+        left: 0;
+    }
+}

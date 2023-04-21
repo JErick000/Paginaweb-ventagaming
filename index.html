@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Security Games</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/bloque1.css">
+    <link rel="stylesheet" href="css/pie_pagina.css">
+</head>
+<body>
+    <div class="contenedor">
+        <header></header> 
+        <div class="logo">
+            <img src="img/logo.png" alt="">
+        </div>
+            <input type="checkbox" id="check">
+            <div for="check" class="mostrarMenu" id="mostrarMenu">
+            <i class='bx bx-menu'></i>
+            </div>
+
+            <nav class="menu" id="menu">
+                <ul>
+                    <li><a href="#"><i class='bx bx-home' ></i> Inicio</a></li>
+                    <li><a href="registro.html" target="_blank">Registro</a></li>
+                    <li><a href="#ps4">Ps4</a></li>
+                    <li><a href="#ps5">Ps5</a></li>
+                </ul>
+            </nav>
+        <div class="portada">
+            
+        </div>
+        
+        <div class="bloque1" id="ps5">
+            <h1><i class='bx bxs-trophy' ></i> LOS JUEGOS POPULARES PS5</h1>
+            
+            <article class="contenido">
+            <br><br>
+            <a href="https://www.ea.com/es-es/games/fifa/fifa-23" target="_blank"><img src="img/FIFA23.jpg" alt="">
+            <a href="https://www.callofduty.com/es/blackopscoldwar/buy" target="_blank"><img src="img/callofduty.jpg" alt=""></a>
+            <a href="https://www.playstation.com/es-pe/games/god-of-war-ragnarok/" target="_blank"><img src="img/godofwar.jpg" alt=""></a>
+            
+        </article>
+        </div>
+
+        <div class="bloque2" id="ps4">
+            <h1><i class='bx bxs-flag-checkered bx-tada' ></i> LOS MÁS VENDIDOS</h1>
+            <br>
+            <article class="contenido2">
+            <a href="https://www.playstation.com/es-pe/games/marvels-spider-man-miles-morales/" target="_blank"><img src="img/spiderman.jpg" alt=""></a>    
+            <a href="https://store.playstation.com/es-ar/product/UP1001-CUSA25882_00-WWE2K22MAINSKU01" target="_blank"><img src="img/WWE-2K22-PS4.jpg" alt=""></a>
+            <a href="https://www.ea.com/es-es/games/fifa/fifa-23" target="_blank"><img src="img/FIFA23.jpg" alt=""></a>    
+            <a href="https://www.callofduty.com/es/blackopscoldwar/buy" target="_blank"><img src="img/callofduty.jpg" alt=""></a>
+            <a href="https://www.playstation.com/es-pe/games/god-of-war-ragnarok/" target="_blank"><img src="img/godofwar.jpg" alt=""></a>
+        </article>
+        </div>
+    </div>
+    <footer>
+        <div class="servicio" id="referencias">
+            <div class="libro">
+            <h3>Servicio al cliente</h3>
+            <br>
+            <a href="#">Libro de reclamacion</a>
+            <a href="#">Contactos</a>
+            <a href="#">Formulario</a>
+            </div>
+        
+        <div class="contenido3">
+            <h3>Categorias</h3>
+            <br>
+            <a href="#">Deporte</a>
+            <a href="#">Accion</a>
+            <a href="#">Superheroes</a>
+        </div>
+        <div class="redes">
+            <h3>Redes sociales</h3>
+            <br>
+            <a href="#">Facebook</a>
+            <a href="#">Youtube</a>
+            <a href="#">Instagram</a>
+        </div>
+        <div class="logos2">
+
+        <a href="https://www.facebook.com/Storegamesperu.comps3ps4" target="_blank"><i class='bx bxl-facebook-circle' style='color:#f1d2d2'></i></a>
+        <a href="https://www.instagram.com/storegamesperups3ps4/" target="_blank"><i class='bx bxl-instagram-alt' style='color:#f1d2d2' ></i></a>
+        <a href="https://twitter.com/storegamesperu"><i class='bx bxl-twitter' style='color:#f1d2d2' ></i></a>
+        </div>
+
+        <img src="img/logo.png" alt="">
+    </div>
+
+    </footer>
+    <script>
+        const mostrar = document.querySelector("#mostrarMenu");
+        const menu = document.querySelector("#menu");
+        mostrar.addEventListener("click", function () {
+            menu.classList.toggle("verMenu");
+        });
+    </script>
+</body>
+</html>
